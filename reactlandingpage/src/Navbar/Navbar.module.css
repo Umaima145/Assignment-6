@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:white;
+    color: #fff;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 60px;
+  }
+  
+  .navlinks {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navlinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navlinks li {
+    margin-right: 20px;
+  }
+  
+  .navlinks a {
+    color:  #00306E;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+  }
+  
+  .searchbox {
+    margin-left: 20px;
+   
+  }
+  
+  .searchbox input[type="search"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    border: 2px solid #00306E ;
+  }
+  
+  .searchbox button[type="submit"] {
+    background-color: #00306E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .navtoggle {
+    display: none;
+    
+  }
+  
+  .togglebutton {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .togglebutton span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color:#00306E;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .navtoggle {
+      display: block;
+      background: none;
+   
+    }
+    .navlinks {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color:#00306E;
+      padding: 20px;
+      
+      text-decoration: none;
+    }
+    .navlinks a{
+        color: #fff;
+    }
+    .navlinks.active {
+      display: block;
+    }
+  }
+
+
+
+ 
+  @media (max-width: 768px) {
+    .navlinks {
+      flex-direction: column;
+    }
+    .navlinks ul {
+      flex-direction: column;
+    }
+    .navlinks li {
+      margin-right: 0;
+    }
+    .searchbox {
+      margin-left: 0;
+    }
+    .searchbox input[type="search"] {
+      width: 100%;
+    }
+  }

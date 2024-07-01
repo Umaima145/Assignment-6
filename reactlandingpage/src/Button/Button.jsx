@@ -1,0 +1,17 @@
+import React from 'react'
+import styles from './Button.module.css';
+ 
+const Button = ({head}) => {
+  return (
+    <div className={styles.bt} >
+      <button className={styles.bt1} >{head}
+        <div><svg className={styles.arr1} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00306E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+  <line x1="5" y1="12" x2="19" y2="12"></line>
+  <polyline points="12 5 19 12 12 19"></polyline>
+</svg></div>
+      </button>
+    </div>
+  )
+}
+
+export default Button

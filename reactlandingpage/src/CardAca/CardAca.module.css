@@ -1,0 +1,81 @@
+.in {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 60px;
+    transition: filter 1s;
+
+}
+.bg:hover{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.talk, .tal {
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+}
+
+.talk {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tal {
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sv {
+    margin-left: 10px;
+}
+
+.nam {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 605px) and (max-height: 739px) {
+.bg{
+    margin-left: 20px;
+    padding: 5px;
+}
+}
+
+
+@media (max-width: 768px) {
+    .bg {
+        width: calc(100% - 40px); /* Full width minus gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .talk {
+        font-size: 20px;
+    }
+
+    .tal {
+        font-size: 16px;
+    }
+
+    .sv {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
